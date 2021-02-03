@@ -1,3 +1,2 @@
-# CVE-Sniffer-Detective
-Script that lets you enter in an IP address and it will search through the services to find any common vulnerabilities and exploits
-yay
+# Vulner's Report
+Script that lets you enter in an IP address and it will search through your device or network for CPE's to find any common vulnerabilities and exploits
