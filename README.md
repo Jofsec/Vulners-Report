@@ -1,7 +1,7 @@
 # Vulner's Report
 ![ascii](./images/ascii.png.png)
 #
-Script that lets you enter in an IP address and it will search through your device or network for CPE's to find any common vulnerabilities and exploits within the system
+The reason we built this script was to help people, specifically those working in Blue Team roles, to be able to streamline the process of looking up vulnerabilities for your software and OS versions.  With this script, it is as simple as just plugging in an IP Address instead of having to look up the software and OS versions to try and find any potential vulnerabilities.
 #
 # Run down of the Script
 **Nmap Scan**
@@ -31,10 +31,6 @@ The main reason we output the Hypertext Reference is so that the user can go to 
 ![URL_Linked_Website](./images/URL_Linked_Website.png)
 
 ![Linked_Website](./images/Linked_Website_Explaining_Vulnerability.png)
-
-**How Does This Help You**
-
-The reason we built this script was to help people, specifically those working in Blue Team roles, to be able to streamline the process of looking up vulnerabilities for your software and OS versions.  With this script, it is as simple as just plugging in an IP Address instead of having to look up the software and OS versions to try and find any potential vulnerabilities.
 
 **Extra Notes**
 
