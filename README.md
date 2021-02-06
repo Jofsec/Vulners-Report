@@ -28,7 +28,7 @@ Now that we have the CPE information, We will use the Vulner's API database to c
 
 The main reason we output the Hypertext Reference is so that the user can go to that URL and read more about the specific CVE as well as posted solutions on how to fix it.  You can see an example of this below.
 
-![URL_Linked_Website](./images/URL_Linked_Website)
+![URL_Linked_Website](./images/URL_Linked_Website.png)
 
 ![Linked_Website](./images/Linked_Website_Explaining_Vulnerability.png)
 
