@@ -11,7 +11,7 @@ import subprocess
 #print(text)
 
 def parse_nmap_xml(xml_file_path):
-    vulners_api = vulners.Vulners(api_key="M7S14P5B16JGXAGI9MEIGS10ZUSVHVCFU1ZS7LQ6XHMEUHYAY5KSBPZOAMLP5O83")
+    vulners_api = vulners.Vulners(api_key="your_api_key")
 
     # create the XML object, usually known as a Tree
     dom_tree = xml.dom.minidom.parse(xml_file_path)
