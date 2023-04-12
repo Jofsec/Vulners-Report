@@ -1,9 +1,14 @@
 # Vulner's Report
+
+Vulners-Report is a powerful and highly effective tool for vulnerability assessment and management. It provides users with a comprehensive overview of potential security threats and offers actionable insights to mitigate them. With Vulners-Report, users can easily identify vulnerabilities across their entire network and prioritize remediation efforts based on the severity of the issue.
+
 ![ascii](./images/ascii.png.png)
-#
-The reason we built this script was to help people, specifically those working in Blue Team roles, to be able to streamline the process of looking up vulnerabilities for your software and OS versions.  With this script, it is as simple as just plugging in an IP Address instead of having to look up the software and OS versions to try and find any potential vulnerabilities.
+
 #
 # Run down of the Script
+
+The user is first prompted for an IP Address, this Python script then utilizes the Nmap scanner and the Vulners API to perform vulnerability scanning and generate reports. Specifically, the script performs the following actions:
+
 **Nmap Scan**
 
 First thing we start with is an nmap scan that allows us to gather the information on the CPE's to be able to check for CVE's.  This starts with a prompt to enter an IP address that needs to be connected to the device you are using.  From there the script runs a specified Nmap scan which will output an XML file for us to parse through later.
