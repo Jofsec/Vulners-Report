@@ -11,15 +11,23 @@ The user is first prompted for an IP Address, this Python script then utilizes t
 
 **Nmap Scan**
 
-First thing we start with is an nmap scan that allows us to gather the information on the CPE's to be able to check for CVE's.  This starts with a prompt to enter an IP address that needs to be connected to the device you are using.  From there the script runs a specified Nmap scan which will output an XML file for us to parse through later.
+It uses the subprocess module to execute an Nmap scan with the following options:
+
+-sV: Enables service version detection.
+-O: Enables OS detection.
+-T4: Sets the timing template to aggressive.
+-p: Specifies the port range to scan.
+-oX: Outputs the results in XML format to a file.
 
 ![Nmap](./images/Nmap_Scan.png)
 
 **Parsing the XML File**
 
-From there the script allows us to parse through said XML File to be able to locate the CPE's information to be able to be plugged in later. 
+We then parse the resulting XML file using the xml.dom.minidom module. 
 
 ![XML_File](./images/XML_File.png)
+
+For each CPE (Common Platform Enumeration) string found in the XML file, it calls the Vulners API's cpeVulnerabilities() method to obtain a list of vulnerabilities associated with that CPE.
 
 ![Parsing_Script](./images/XML_Parsing_Script.png)
 
