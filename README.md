@@ -31,15 +31,17 @@ For each CPE (Common Platform Enumeration) string found in the XML file, it call
 
 ![Parsing_Script](./images/XML_Parsing_Script.png)
 
-**Output of the CPE Information**
+**Outputting CPE Information**
 
-Now that we have the CPE information, We will use the Vulner's API database to check for any CVE's and once we have that information it is about simplifying it so that it can be easily read.  We decided to only show specific info about the CVE's to not overwhelm our program or the user.  We went with showing the ID, the CVSS, the hypertext reference, and then the description so you would know a little more about the CVE for diving any deeper.
+It extracts relevant vulnerability information from the resulting dictionary and prints it to the console in a readable format.
+
+The script also includes error handling for invalid CPE strings and uses the vulners module to simplify the process of accessing the Vulners API.
 
 ![Output](./images/CPE_Output.png)
 
-**Using the Hypertext Reference for Solutions**
+**Improving CVE Remediation Efforts with Hypertext References**
 
-The main reason we output the Hypertext Reference is so that the user can go to that URL and read more about the specific CVE as well as posted solutions on how to fix it.  You can see an example of this below.
+One of the primary reasons for including the Hypertext Reference in the output is to provide the user with a direct URL to access additional information about the specific CVE, as well as potential solutions to fix it. An example of how this information is presented can be found below.
 
 ![URL_Linked_Website](./images/URL_Linked_Website.png)
 
@@ -47,5 +49,5 @@ The main reason we output the Hypertext Reference is so that the user can go to 
 
 **Extra Notes**
 
-Testing with this script was done on a local host network using VM's provided to us by Fullstack Academy.  Currently, this version of script only works on Linux based OS's.  https://github.com/vulnersCom/api is Vulner's Github for different ways to use their database for your needs.  https://vulners.com/search?query=!bulletinFamily:ioc%20order:published is a link to the Vulner's Database if you are interesting in looking at what vulnerabilities they are reporting daily.
+We conducted testing for this script on a local host network using VMs provided by Fullstack Academy. Please note that the current version of the script is only compatible with Linux-based operating systems. To learn more about how to use the Vulners database for your specific needs, visit their Github page at https://github.com/vulnersCom/api. Additionally, if you are interested in viewing the daily reported vulnerabilities in the Vulners database, you can access them using the following link: https://vulners.com/search?query=!bulletinFamily:ioc%20order:published.
 
